@@ -39,6 +39,7 @@ class RecurringServiceManager extends ModelManager
         Attributes\Currency\CurrencyAttribute::class,
         Attributes\TaxId\TaxIdAttribute::class,
         Attributes\FrequencyUnit\FrequencyUnitAttribute::class,
+        Attributes\FrequencyValue\FrequencyValueAttribute::class,
      ];
 
     /**

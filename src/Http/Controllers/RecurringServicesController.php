@@ -30,6 +30,7 @@ class RecurringServicesController extends RestController
         'currency',
         'tax_id',
         'frequency_unit',
+        'frequency_value',
         'created_at',
         'updated_at',
     ];
@@ -48,6 +49,7 @@ class RecurringServicesController extends RestController
         'currency',
         'tax_id',
         'frequency_unit',
+        'frequency_value',
     ];
 
     /**

@@ -30,6 +30,7 @@ class CreateRecurringServicesTable extends Migration
             $table->integer('tax_id')->unsigned()->nullable();
             $table->foreign('tax_id')->references('id')->on(Config::get('ore.tax.table'));
             $table->string('frequency_unit');
+            $table->integer('frequency_value');
             $table->timestamps();
             $table->softDeletes();
         });
