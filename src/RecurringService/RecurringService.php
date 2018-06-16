@@ -4,9 +4,9 @@ namespace Railken\LaraOre\RecurringService;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Railken\Laravel\Manager\Contracts\EntityContract;
 use Illuminate\Support\Facades\Config;
 use Railken\LaraOre\Tax\Tax;
+use Railken\Laravel\Manager\Contracts\EntityContract;
 
 class RecurringService extends Model implements EntityContract
 {
@@ -41,7 +41,6 @@ class RecurringService extends Model implements EntityContract
      */
     protected $dates = ['deleted_at'];
 
-
     /**
      * Creates a new instance of the model.
      *
@@ -62,7 +61,6 @@ class RecurringService extends Model implements EntityContract
     protected $casts = [
         'enabled' => 'boolean',
     ];
-    
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

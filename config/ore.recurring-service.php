@@ -13,7 +13,7 @@ return [
     'table' => 'ore_recurring_services',
 
     'attributes' => [
-        
+
     ],
 
     'router' => [

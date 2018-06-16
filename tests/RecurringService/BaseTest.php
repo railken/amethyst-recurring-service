@@ -13,7 +13,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
             \Railken\LaraOre\RecurringServiceServiceProvider::class,
         ];
     }
-    
+
     /**
      * @return \Railken\LaraOre\Tax\Tax
      */
@@ -40,8 +40,8 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('code', str_random(40));
         $bag->set('description', str_random(40));
         $bag->set('notes', str_random(40));
-        $bag->set('country', "IT");
-        $bag->set('locale', "it_IT");
+        $bag->set('country', 'IT');
+        $bag->set('locale', 'it_IT');
         $bag->set('enabled', true);
         $bag->set('price_starting', 40);
         $bag->set('price', 10);

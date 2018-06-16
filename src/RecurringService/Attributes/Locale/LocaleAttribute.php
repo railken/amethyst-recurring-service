@@ -5,7 +5,6 @@ namespace Railken\LaraOre\RecurringService\Attributes\Locale;
 use Railken\Laravel\Manager\Attributes\BaseAttribute;
 use Railken\Laravel\Manager\Contracts\EntityContract;
 use Railken\Laravel\Manager\Tokens;
-use Respect\Validation\Validator as v;
 
 class LocaleAttribute extends BaseAttribute
 {
@@ -50,7 +49,7 @@ class LocaleAttribute extends BaseAttribute
         Tokens::PERMISSION_FILL => 'recurringservice.attributes.locale.fill',
         Tokens::PERMISSION_SHOW => 'recurringservice.attributes.locale.show',
     ];
-    
+
     /**
      * Is a value valid ?
      *
