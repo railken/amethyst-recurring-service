@@ -35,6 +35,7 @@ class RecurringServiceServiceProvider extends ServiceProvider
         $this->app->register(\Railken\Laravel\Manager\ManagerServiceProvider::class);
         $this->app->register(\Railken\LaraOre\UserServiceProvider::class);
         $this->app->register(\Railken\LaraOre\ApiServiceProvider::class);
+        $this->app->register(\Railken\LaraOre\TaxServiceProvider::class);
         $this->mergeConfigFrom(__DIR__.'/../config/ore.recurring-service.php', 'ore.recurring-service');
     }
 

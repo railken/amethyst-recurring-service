@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Laravel\Manager\Contracts\EntityContract;
 use Illuminate\Support\Facades\Config;
+use Railken\LaraOre\Tax\Tax;
 
 class RecurringService extends Model implements EntityContract
 {
@@ -28,6 +29,7 @@ class RecurringService extends Model implements EntityContract
         'price',
         'price_ending',
         'currency',
+        'tax_id',
     ];
 
     /**
@@ -58,4 +60,13 @@ class RecurringService extends Model implements EntityContract
     protected $casts = [
         'enabled' => 'boolean',
     ];
+    
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function tax()
+    {
+        return $this->belongsTo(Tax::class);
+    }
 }

@@ -27,6 +27,8 @@ class CreateRecurringServicesTable extends Migration
             $table->float('price_starting');
             $table->float('price');
             $table->float('price_ending');
+            $table->integer('tax_id')->unsigned()->nullable();
+            $table->foreign('tax_id')->references('id')->on(Config::get('ore.tax.table'));
             $table->timestamps();
             $table->softDeletes();
         });

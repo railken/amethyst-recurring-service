@@ -3,6 +3,7 @@
 namespace Railken\LaraOre\Tests\RecurringService;
 
 use Railken\Bag;
+use Railken\LaraOre\Tax\TaxManager;
 
 abstract class BaseTest extends \Orchestra\Testbench\TestCase
 {
@@ -11,6 +12,20 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         return [
             \Railken\LaraOre\RecurringServiceServiceProvider::class,
         ];
+    }
+    
+    /**
+     * @return \Railken\LaraOre\Tax\Tax
+     */
+    public function newTax()
+    {
+        $am = new TaxManager();
+        $bag = new Bag();
+        $bag->set('name', 'Vat 22%');
+        $bag->set('description', 'Give me');
+        $bag->set('calculator', 'x*0.22');
+
+        return $am->findOrCreate($bag->toArray())->getResource();
     }
 
     /**
@@ -32,6 +47,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('price', 10);
         $bag->set('price_ending', 10);
         $bag->set('currency', 'EUR');
+        $bag->set('tax_id', $this->newTax()->id);
 
         return $bag;
     }
