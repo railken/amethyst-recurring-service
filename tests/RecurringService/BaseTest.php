@@ -28,6 +28,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('country', "IT");
         $bag->set('locale', "it_IT");
         $bag->set('enabled', true);
+        $bag->set('price_starting', 40);
 
         return $bag;
     }
