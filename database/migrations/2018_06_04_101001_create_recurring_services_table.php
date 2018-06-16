@@ -16,7 +16,8 @@ class CreateRecurringServicesTable extends Migration
     {
         Schema::create(Config::get('ore.recurring-service.table'), function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('code')->unique();
             $table->text('notes')->nullable();
             $table->timestamps();
             $table->softDeletes();

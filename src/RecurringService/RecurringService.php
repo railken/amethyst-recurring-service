@@ -19,6 +19,7 @@ class RecurringService extends Model implements EntityContract
     protected $fillable = [
         'name',
         'notes',
+        'code',
     ];
 
     /**
