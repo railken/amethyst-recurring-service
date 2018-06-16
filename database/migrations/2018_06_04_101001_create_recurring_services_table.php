@@ -20,6 +20,7 @@ class CreateRecurringServicesTable extends Migration
             $table->string('code')->unique();
             $table->text('description')->nullable();
             $table->text('notes')->nullable();
+            $table->string('country');
             $table->timestamps();
             $table->softDeletes();
         });
