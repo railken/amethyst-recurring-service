@@ -27,6 +27,7 @@ class RecurringServicesController extends RestController
         'price_starting',
         'price',
         'price_ending',
+        'currency',
         'created_at',
         'updated_at',
     ];
@@ -42,6 +43,7 @@ class RecurringServicesController extends RestController
         'price_starting',
         'price',
         'price_ending',
+        'currency',
     ];
 
     /**

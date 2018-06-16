@@ -31,6 +31,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('price_starting', 40);
         $bag->set('price', 10);
         $bag->set('price_ending', 10);
+        $bag->set('currency', 'EUR');
 
         return $bag;
     }
