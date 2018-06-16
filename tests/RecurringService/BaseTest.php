@@ -48,6 +48,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('price_ending', 10);
         $bag->set('currency', 'EUR');
         $bag->set('tax_id', $this->newTax()->id);
+        $bag->set('frequency_unit', "days");
 
         return $bag;
     }

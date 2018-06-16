@@ -30,6 +30,7 @@ class RecurringService extends Model implements EntityContract
         'price_ending',
         'currency',
         'tax_id',
+        'frequency_unit',
     ];
 
     /**
