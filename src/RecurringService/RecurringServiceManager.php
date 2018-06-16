@@ -2,10 +2,10 @@
 
 namespace Railken\LaraOre\RecurringService;
 
+use Illuminate\Support\Facades\Config;
 use Railken\Laravel\Manager\Contracts\AgentContract;
 use Railken\Laravel\Manager\ModelManager;
 use Railken\Laravel\Manager\Tokens;
-use Illuminate\Support\Facades\Config;
 
 class RecurringServiceManager extends ModelManager
 {
@@ -15,7 +15,7 @@ class RecurringServiceManager extends ModelManager
      * @var string
      */
     public $entity = RecurringService::class;
-    
+
     /**
      * List of all attributes.
      *
