@@ -35,6 +35,7 @@ class RecurringServiceManager extends ModelManager
         Attributes\Enabled\EnabledAttribute::class,
         Attributes\PriceStarting\PriceStartingAttribute::class,
         Attributes\Price\PriceAttribute::class,
+        Attributes\PriceEnding\PriceEndingAttribute::class,
      ];
 
     /**

@@ -26,6 +26,7 @@ class RecurringServicesController extends RestController
         'enabled',
         'price_starting',
         'price',
+        'price_ending',
         'created_at',
         'updated_at',
     ];
@@ -40,6 +41,7 @@ class RecurringServicesController extends RestController
         'enabled',
         'price_starting',
         'price',
+        'price_ending',
     ];
 
     /**
