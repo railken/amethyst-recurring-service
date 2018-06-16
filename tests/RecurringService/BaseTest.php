@@ -26,6 +26,7 @@ abstract class BaseTest extends \Orchestra\Testbench\TestCase
         $bag->set('description', str_random(40));
         $bag->set('notes', str_random(40));
         $bag->set('country', "IT");
+        $bag->set('locale', "it_IT");
 
         return $bag;
     }

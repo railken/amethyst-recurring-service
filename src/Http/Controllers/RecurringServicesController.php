@@ -21,6 +21,7 @@ class RecurringServicesController extends RestController
         'code',
         'description',
         'country',
+        'locale',
         'notes',
         'created_at',
         'updated_at',
@@ -31,6 +32,7 @@ class RecurringServicesController extends RestController
         'code',
         'description',
         'country',
+        'locale',
         'notes',
     ];
 
