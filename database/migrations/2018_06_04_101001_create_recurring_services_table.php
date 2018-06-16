@@ -24,6 +24,7 @@ class CreateRecurringServicesTable extends Migration
             $table->string('locale');
             $table->boolean('enabled')->default(1);
             $table->float('price_starting');
+            $table->float('price');
             $table->timestamps();
             $table->softDeletes();
         });

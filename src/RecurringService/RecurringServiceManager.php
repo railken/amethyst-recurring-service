@@ -34,6 +34,7 @@ class RecurringServiceManager extends ModelManager
         Attributes\Locale\LocaleAttribute::class,
         Attributes\Enabled\EnabledAttribute::class,
         Attributes\PriceStarting\PriceStartingAttribute::class,
+        Attributes\Price\PriceAttribute::class,
      ];
 
     /**
