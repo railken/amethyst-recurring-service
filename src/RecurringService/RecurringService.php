@@ -23,6 +23,7 @@ class RecurringService extends Model implements EntityContract
         'description',
         'country',
         'locale',
+        'enabled',
     ];
 
     /**
@@ -44,4 +45,13 @@ class RecurringService extends Model implements EntityContract
         $this->table = Config::get('ore.recurring-service.table');
         parent::__construct($attributes);
     }
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'enabled' => 'boolean',
+    ];
 }

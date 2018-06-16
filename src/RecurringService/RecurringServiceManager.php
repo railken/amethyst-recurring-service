@@ -32,6 +32,7 @@ class RecurringServiceManager extends ModelManager
         Attributes\Description\DescriptionAttribute::class,
         Attributes\Country\CountryAttribute::class,
         Attributes\Locale\LocaleAttribute::class,
+        Attributes\Enabled\EnabledAttribute::class,
      ];
 
     /**

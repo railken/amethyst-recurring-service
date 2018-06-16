@@ -22,6 +22,7 @@ class CreateRecurringServicesTable extends Migration
             $table->text('notes')->nullable();
             $table->string('country');
             $table->string('locale');
+            $table->boolean('enabled')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });
