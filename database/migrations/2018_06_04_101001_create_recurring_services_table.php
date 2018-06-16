@@ -18,6 +18,7 @@ class CreateRecurringServicesTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('code')->unique();
+            $table->text('description')->nullable();
             $table->text('notes')->nullable();
             $table->timestamps();
             $table->softDeletes();

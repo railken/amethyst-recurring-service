@@ -20,6 +20,7 @@ class RecurringService extends Model implements EntityContract
         'name',
         'notes',
         'code',
+        'description',
     ];
 
     /**

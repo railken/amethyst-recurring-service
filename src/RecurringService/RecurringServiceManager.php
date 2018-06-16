@@ -29,6 +29,7 @@ class RecurringServiceManager extends ModelManager
         Attributes\UpdatedAt\UpdatedAtAttribute::class,
         Attributes\DeletedAt\DeletedAtAttribute::class,
         Attributes\Code\CodeAttribute::class,
+        Attributes\Description\DescriptionAttribute::class,
      ];
 
     /**

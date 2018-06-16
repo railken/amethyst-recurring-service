@@ -19,6 +19,7 @@ class RecurringServicesController extends RestController
         'id',
         'name',
         'code',
+        'description',
         'notes',
         'created_at',
         'updated_at',
@@ -27,6 +28,7 @@ class RecurringServicesController extends RestController
     public $fillable = [
         'name',
         'code',
+        'description',
         'notes',
     ];
 
