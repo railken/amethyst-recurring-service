@@ -24,9 +24,9 @@ class CreateRecurringServicesTable extends Migration
             $table->string('locale');
             $table->string('currency');
             $table->boolean('enabled')->default(1);
-            $table->float('price_starting');
-            $table->float('price');
-            $table->float('price_ending');
+            $table->float('price_starting')->default(0);
+            $table->float('price')->default(0);
+            $table->float('price_ending')->default(0);
             $table->integer('tax_id')->unsigned()->nullable();
             $table->foreign('tax_id')->references('id')->on(Config::get('ore.tax.table'));
             $table->string('frequency_unit');
