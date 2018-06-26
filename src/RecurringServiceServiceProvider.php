@@ -20,8 +20,8 @@ class RecurringServiceServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutes();
 
-        config(['ore.user.permission.managers' => array_merge(Config::get('ore.user.permission.managers'), [
-            // Railken\LaraOre\RecurringService\RecurringServicerManager::class,
+        config(['ore.permission.managers' => array_merge(Config::get('ore.permission.managers', []), [
+            \Railken\LaraOre\RecurringService\RecurringServiceManager::class,
         ])]);
     }
 
