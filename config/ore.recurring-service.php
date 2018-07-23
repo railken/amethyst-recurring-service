@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Table
@@ -13,14 +12,23 @@ return [
     'table' => 'ore_recurring_services',
 
     'attributes' => [
-
     ],
 
-    'router' => [
-        'prefix'      => '/admin/recurring-services',
-        'middlewares' => [
-            \Railken\LaraOre\RequestLoggerMiddleware::class,
-            'auth:api',
+    /*
+    |--------------------------------------------------------------------------
+    | Http configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the routes
+    |
+    */
+    'http' => [
+        'admin' => [
+            'enabled'    => true,
+            'controller' => Railken\LaraOre\Http\Controllers\Admin\RecurringServicesController::class,
+            'router'     => [
+                'prefix'      => '/admin/recurring-services',
+            ],
         ],
     ],
 ];

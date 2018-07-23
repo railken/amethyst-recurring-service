@@ -42,6 +42,15 @@ class RecurringService extends Model implements EntityContract
     protected $dates = ['deleted_at'];
 
     /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'enabled' => 'boolean',
+    ];
+
+    /**
      * Creates a new instance of the model.
      *
      * @param array $attributes
@@ -52,15 +61,6 @@ class RecurringService extends Model implements EntityContract
         $this->table = Config::get('ore.recurring-service.table');
         parent::__construct($attributes);
     }
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'enabled' => 'boolean',
-    ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
