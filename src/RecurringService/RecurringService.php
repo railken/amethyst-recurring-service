@@ -5,6 +5,7 @@ namespace Railken\LaraOre\RecurringService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
+use Railken\LaraOre\Catalogue\Catalogue;
 use Railken\LaraOre\Tax\Tax;
 use Railken\Laravel\Manager\Contracts\EntityContract;
 
@@ -68,5 +69,13 @@ class RecurringService extends Model implements EntityContract
     public function tax()
     {
         return $this->belongsTo(Tax::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function catalogue()
+    {
+        return $this->belongsTo(Catalogue::class);
     }
 }

@@ -27,6 +27,8 @@ class CreateRecurringServicesTable extends Migration
             $table->float('price_ending')->default(0);
             $table->integer('tax_id')->unsigned()->nullable();
             $table->foreign('tax_id')->references('id')->on(Config::get('ore.tax.table'));
+            $table->integer('catalogue_id')->unsigned()->nullable();
+            $table->foreign('catalogue_id')->references('id')->on(Config::get('ore.catalogue.table'));
             $table->string('frequency_unit');
             $table->integer('frequency_value');
             $table->timestamps();

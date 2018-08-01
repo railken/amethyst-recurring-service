@@ -10,6 +10,7 @@
         "railken/lara-ore-support": "dev-master",
         "railken/lara-ore-user": "dev-master",
         "railken/lara-ore-taxonomy": "dev-master",
+        "railken/lara-ore-catalogue": "dev-master",
         "railken/lara-ore-tax": "dev-master",
         "league/iso3166": "^2.1",
         "dannyvankooten/vat.php": "^1.1",

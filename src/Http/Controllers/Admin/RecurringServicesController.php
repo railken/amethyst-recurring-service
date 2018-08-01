@@ -29,6 +29,7 @@ class RecurringServicesController extends RestController
         'price_ending',
         'currency',
         'tax_id',
+        'catalogue_id',
         'frequency_unit',
         'frequency_value',
         'created_at',
@@ -48,6 +49,9 @@ class RecurringServicesController extends RestController
         'price_ending',
         'currency',
         'tax_id',
+        'tax',
+        'catalogue_id',
+        'catalogue',
         'frequency_unit',
         'frequency_value',
     ];
