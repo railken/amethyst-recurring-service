@@ -19,7 +19,7 @@ class RecurringServiceServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutes();
 
-        config(['ore.permission.managers' => array_merge(Config::get('ore.permission.managers', []), [
+        config(['ore.managers' => array_merge(Config::get('ore.managers', []), [
             \Railken\LaraOre\RecurringService\RecurringServiceManager::class,
         ])]);
     }
@@ -30,7 +30,6 @@ class RecurringServiceServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(\Railken\Laravel\Manager\ManagerServiceProvider::class);
-        $this->app->register(\Railken\LaraOre\UserServiceProvider::class);
         $this->app->register(\Railken\LaraOre\ApiServiceProvider::class);
         $this->app->register(\Railken\LaraOre\TaxServiceProvider::class);
         $this->app->register(\Railken\LaraOre\CatalogueServiceProvider::class);

@@ -9,6 +9,9 @@ use Railken\LaraOre\Catalogue\Catalogue;
 use Railken\LaraOre\Tax\Tax;
 use Railken\Laravel\Manager\Contracts\EntityContract;
 
+/**
+ * @property string $country
+ */
 class RecurringService extends Model implements EntityContract
 {
     use SoftDeletes;

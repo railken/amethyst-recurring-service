@@ -54,8 +54,8 @@ class CurrencyAttribute extends BaseAttribute
     /**
      * Is a value valid ?
      *
-     * @param EntityContract $entity
-     * @param mixed          $value
+     * @param \Railken\LaraOre\RecurringService\RecurringService $entity
+     * @param mixed                                              $value
      *
      * @return bool
      */

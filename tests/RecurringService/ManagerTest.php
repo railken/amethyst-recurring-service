@@ -2,6 +2,7 @@
 
 namespace Railken\LaraOre\Tests\RecurringService;
 
+use Railken\LaraOre\RecurringService\RecurringServiceFaker;
 use Railken\LaraOre\RecurringService\RecurringServiceManager;
 use Railken\LaraOre\Support\Testing\ManagerTestableTrait;
 
@@ -21,6 +22,6 @@ class ManagerTest extends BaseTest
 
     public function testSuccessCommon()
     {
-        $this->commonTest($this->getManager(), $this->getParameters());
+        $this->commonTest($this->getManager(), RecurringServiceFaker::make()->parameters());
     }
 }
