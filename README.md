@@ -1,10 +1,8 @@
-# lara-ore-recurring-service
+# amethyst-recurring-service
 
-[![Build Status](https://img.shields.io/travis/railken/lara-ore-recurring-service/master.svg?style=flat-square)](https://travis-ci.org/railken/lara-ore-recurring-service)
-[![StyleCI](https://github.styleci.io/repos/137266925/shield?branch=master)](https://github.styleci.io/repos/137266925)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/railken/amethyst-recurring-service.svg?branch=master)](https://travis-ci.org/railken/amethyst-recurring-service)
 
-This is a lara-ore package.
+[Amethyst](https://github.com/railken/amethyst) package.
 
 # Requirements
 
@@ -15,7 +13,7 @@ PHP 7.1 and later.
 You can install it via [Composer](https://getcomposer.org/) by typing the following command:
 
 ```bash
-composer require railken/lara-ore-recurring-service
+composer require railken/amethyst-recurring-service
 ```
 
 The package will automatically register itself.

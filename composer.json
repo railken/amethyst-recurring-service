@@ -1,39 +1,36 @@
 {
-    "name": "railken/lara-ore-recurring-service",
-    "keywords": ["laravel", "lara-ore"],
+    "name": "railken/amethyst-recurring-service",
+    "keywords": ["laravel", "amethyst", "amethyst-recurring-service", "recurring-service"],
     "license": "MIT",
     "require": {
         "php": ">=7.1",
-        "railken/bag": "^1.2",
-        "railken/laravel-manager": "^3.1",
-        "railken/lara-ore-api": "dev-master",
-        "railken/lara-ore-support": "dev-master",
-        "railken/lara-ore-taxonomy": "dev-master",
-        "railken/lara-ore-catalogue": "dev-master",
-        "railken/lara-ore-tax": "dev-master",
+        "railken/amethyst-common": "0.1.*",
+        "railken/amethyst-tax": "0.1.*",
+        "railken/amethyst-catalogue": "0.1.*",
+        "railken/amethyst-address": "0.1.*",
         "league/iso3166": "^2.1",
         "dannyvankooten/vat.php": "^1.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.10",
         "phpunit/phpunit": "~7.0",
-        "orchestra/testbench": "~3.6",
+        "orchestra/testbench": "3.6.*",
         "friendsofphp/php-cs-fixer": "^2.8.1"
     },
     "autoload": {
         "psr-4" : {
-            "Railken\\LaraOre\\" : "src/"
+            "Railken\\Amethyst\\" : "src/"
         }
     },
     "autoload-dev": {
         "psr-4": { 
-            "Railken\\LaraOre\\Tests\\": "tests/" 
+            "Railken\\Amethyst\\Tests\\": "tests/" 
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Railken\\LaraOre\\RecurringServiceServiceProvider"
+                "Railken\\Amethyst\\Providers\\RecurringServiceServiceProvider"
             ]
         }
     }
